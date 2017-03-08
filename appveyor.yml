@@ -11,9 +11,10 @@ test: off
 artifacts:
 - path: '**\Mediator.Net.Unity*.nupkg'
 environment:
-  nuget_user: ocean_ltd@hotmail.com
+  nuget_user:
+    secure: MhwFuN/sbBveePajGlwLxp1Knv4udYL6Z1JMgFmi7jc=
   nuget_password:
-    secure: L2U25jgOixWkjL5JwE3k2w==
+    secure: P1b9jgmwqRc14k+68EkRbQ==
 nuget:
   account_feed: true
   project_feed: true
