@@ -10,3 +10,6 @@ after_build:
 test: off
 artifacts:
 - path: '**\Mediator.Net.Unity*.nupkg'
+nuget:
+  account_feed: true
+  project_feed: true
