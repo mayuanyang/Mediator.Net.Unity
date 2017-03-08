@@ -1,0 +1,12 @@
+version: 1.0.{build}
+configuration: Release
+before_build:
+- cmd: nuget restore Mediator.Net.Unity.sln
+build:
+  project: Mediator.Net.Unity.sln
+  verbosity: minimal
+after_build:
+- cmd: nuget pack src/Mediator.Net.Unity/Mediator.Net.Unity.csproj -Version %APPVEYOR_BUILD_VERSION%
+test: off
+artifacts:
+- path: '**\Mediator.Net.Unity*.nupkg'
