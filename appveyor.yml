@@ -17,4 +17,3 @@ environment:
     secure: P1b9jgmwqRc14k+68EkRbQ==
 nuget:
   account_feed: true
-  project_feed: true
